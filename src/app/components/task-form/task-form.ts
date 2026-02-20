@@ -26,4 +26,4 @@ export class TaskFormComponent {
       this.form.markAllAsTouched();
     }
   }
-}
+} 

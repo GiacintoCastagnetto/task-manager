@@ -22,3 +22,24 @@
     color: #94a3b8; 
     font-size: 1.1rem; 
 }
+
+.link-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pdf-link {
+    display: inline-block;
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.pdf-link:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}

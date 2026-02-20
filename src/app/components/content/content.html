@@ -1,6 +1,10 @@
 <div class="wrapper">
     <h1 class="main-title">Task Manager</h1>
 
+    <div class="link-container">
+        <a href="/propuesta.pdf" target="_blank" class="pdf-link">Ver propuesta</a>
+    </div>
+
     <app-task-form (onAddTask)="handleNewTask($event)"></app-task-form>
     
     <app-task-controls (onFilter)="handleFilterChange($event)"></app-task-controls>
