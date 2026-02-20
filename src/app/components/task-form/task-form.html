@@ -1,0 +1,24 @@
+<div class="form-container">
+    <form class="form" [formGroup]="form" (ngSubmit)="submit()">
+        <h2 class="form-title">Add New Task</h2>
+        
+        <input type="text" placeholder="Task Title" formControlName="title">
+        
+        @if(form.get('title')?.hasError('required') && form.get('title')?.touched) {
+            <div class="alert">Task title is required.</div>
+        }
+
+        <select formControlName="priority">
+            <option value="Low">Low Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+        </select>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="completed" formControlName="completed">
+            <label for="completed">Mark as completed</label>
+        </div>
+
+        <button type="submit">Add Task</button>
+    </form>
+</div>

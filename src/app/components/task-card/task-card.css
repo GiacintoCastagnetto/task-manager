@@ -1,0 +1,35 @@
+.card {
+    background-color: #1e293b; 
+    padding: 1.2rem; 
+    border-radius: 8px;
+    border-left: 6px solid transparent; 
+    color: white; 
+    margin-bottom: 1rem;
+}
+
+.priority-high { 
+    border-left-color: #ef4444;
+}
+
+.priority-medium {
+    border-left-color: #f59e0b; 
+} 
+
+.priority-low { 
+    border-left-color: #10b981; 
+} 
+
+.completed-card { 
+    opacity: 0.6; 
+}
+
+.strikethrough { 
+    text-decoration: line-through; 
+    color: #94a3b8; 
+}
+
+.status { 
+    font-size: 0.9rem; 
+    color: #cbd5e1; 
+    margin-top: 0.5rem; 
+}

@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <h1 class="main-title">Task Manager</h1>
+
+    <app-task-form (onAddTask)="handleNewTask($event)"></app-task-form>
+    
+    <app-task-controls (onFilter)="handleFilterChange($event)"></app-task-controls>
+
+    <div class="task-list">
+        @for (task of filteredTasks(); track task.title) {
+            <app-task-card [task]="task"></app-task-card>
+        } @empty {
+            <p class="empty">No tasks found for this filter.</p>
+        }
+    </div>
+</div>

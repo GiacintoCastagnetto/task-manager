@@ -1,0 +1,21 @@
+.controls-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    margin-bottom: 2rem; 
+}
+
+button {
+    padding: 0.6rem 1.2rem; 
+    background-color: transparent; 
+    color: #38bdf8;
+    border: 2px solid #38bdf8; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+button:hover { 
+    background-color: #38bdf8; 
+    color: #0f172a; 
+}

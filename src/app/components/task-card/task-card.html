@@ -1,0 +1,9 @@
+<div class="card" [ngClass]="{
+    'completed-card': task().completed,
+    'priority-high': task().priority === 'High',
+    'priority-medium': task().priority === 'Medium',
+    'priority-low': task().priority === 'Low'
+}">
+    <h3 [ngClass]="{'strikethrough': task().completed}">{{ task().title }}</h3>
+    <p class="status">Priority: <strong>{{ task().priority }}</strong></p>
+</div>
